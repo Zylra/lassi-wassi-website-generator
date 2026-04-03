@@ -33,7 +33,7 @@ export default function HeroSection() {
           <Button size="lg" className="text-lg px-8 py-6 animate-pulse-glow" asChild>
             <a href="#menu">View Menu</a>
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary text-primary bg-primary/10 hover:bg-primary/20" asChild>
             <a href="#locations">Find Nearest Outlet</a>
           </Button>
         </div>
