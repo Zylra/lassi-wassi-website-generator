@@ -22,7 +22,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-extrabold text-gradient mb-3">Lassi Wassi</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/logo.png" alt="Lassi Wassi Logo" className="h-[60px] w-auto drop-shadow-md" />
+              <h3 className="text-2xl font-extrabold text-gradient">Lassi Wassi</h3>
+            </div>
             <p className="text-sm text-charcoal/60 leading-relaxed">
               Pune's favourite café chain. Fresh shawarmas, thick lassis, bold burgers & vibes that hit different.
             </p>

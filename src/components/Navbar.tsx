@@ -27,8 +27,11 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
-        <a href="#" className="text-2xl font-extrabold text-gradient">
-          Lassi Wassi
+        <a href="#" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+          <img src="/logo.png" alt="Lassi Wassi Logo" className="h-[50px] w-auto drop-shadow-md" />
+          <span className="text-2xl font-extrabold tracking-wide text-gradient hidden sm:block">
+            Lassi Wassi
+          </span>
         </a>
 
         {/* Desktop Nav */}
