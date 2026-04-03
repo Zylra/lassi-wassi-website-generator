@@ -14,7 +14,7 @@ export default function FranchiseSection() {
   return (
     <section
       id="franchise"
-      className="py-24 bg-charcoal text-primary-foreground relative overflow-hidden"
+      className="py-24 bg-white text-charcoal relative overflow-hidden border-t"
       ref={ref}
     >
       {/* Liquid blobs */}
@@ -28,16 +28,16 @@ export default function FranchiseSection() {
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Own a <span className="text-gradient">Lassi Wassi</span>
           </h2>
-          <p className="text-primary-foreground/70 text-lg mb-10 leading-relaxed">
+          <p className="text-charcoal/70 text-lg mb-10 leading-relaxed">
             Be part of Pune's fastest-growing café brand. We provide the recipe, the brand, and the
             support — you bring the passion. Let's grow together!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             {perks.map((perk) => (
-              <div key={perk.text} className="flex items-center gap-3 bg-primary-foreground/5 rounded-xl px-5 py-3 border border-primary-foreground/10 hover:bg-primary-foreground/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
+              <div key={perk.text} className="flex items-center gap-3 bg-charcoal/5 rounded-xl px-5 py-3 border border-charcoal/10 hover:bg-charcoal/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
                 <perk.icon className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-sm font-medium text-primary-foreground/80">{perk.text}</span>
+                <span className="text-sm font-medium text-charcoal/80">{perk.text}</span>
               </div>
             ))}
           </div>

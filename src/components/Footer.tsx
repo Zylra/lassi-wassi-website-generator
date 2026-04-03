@@ -17,20 +17,20 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-primary-foreground/80 pt-16 pb-8">
+    <footer className="bg-white text-charcoal/80 pt-16 pb-8 border-t">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-extrabold text-gradient mb-3">Lassi Wassi</h3>
-            <p className="text-sm text-primary-foreground/60 leading-relaxed">
+            <p className="text-sm text-charcoal/60 leading-relaxed">
               Pune's favourite café chain. Fresh shawarmas, thick lassis, bold burgers & vibes that hit different.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-primary-foreground mb-4">Quick Links</h4>
+            <h4 className="font-bold text-charcoal mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -44,7 +44,7 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h4 className="font-bold text-primary-foreground mb-4">Outlets</h4>
+            <h4 className="font-bold text-charcoal mb-4">Outlets</h4>
             <ul className="space-y-2">
               {locations.map((loc) => (
                 <li key={loc.name}>
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-primary-foreground mb-4">Contact</h4>
+            <h4 className="font-bold text-charcoal mb-4">Contact</h4>
             <div className="space-y-3">
               <a href="mailto:hello@lassiwassi.com" className="flex items-center gap-2 text-sm hover:text-primary transition-colors">
                 <Mail className="w-4 h-4" /> hello@lassiwassi.com
@@ -73,7 +73,7 @@ export default function Footer() {
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all"
+                    className="w-10 h-10 rounded-full bg-charcoal/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
                     aria-label={s.label}
                   >
                     <s.icon className="w-4 h-4" />
@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/40">
+        <div className="border-t border-charcoal/10 pt-6 text-center text-sm text-charcoal/60">
           © {new Date().getFullYear()} Lassi Wassi. All rights reserved.
         </div>
       </div>

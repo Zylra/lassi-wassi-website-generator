@@ -144,19 +144,19 @@
 }
 
 .animate-blob {
-  animation: blob 8s ease-in-out infinite;
+  display: none;
 }
 
 .animate-blob-delay-2 {
-  animation: blob 8s ease-in-out infinite 2s;
+  display: none;
 }
 
 .animate-blob-delay-4 {
-  animation: blob 8s ease-in-out infinite 4s;
+  display: none;
 }
 
 .animate-ripple {
-  animation: ripple 2s ease-out infinite;
+  display: none;
 }
 
 .animate-shimmer {
