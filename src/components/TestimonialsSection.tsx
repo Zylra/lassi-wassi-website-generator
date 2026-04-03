@@ -19,8 +19,10 @@ export default function TestimonialsSection() {
   const ref = useScrollReveal();
 
   return (
-    <section id="reviews" className="py-24 bg-muted/50" ref={ref}>
-      <div className="container mx-auto px-4">
+    <section id="reviews" className="py-24 bg-muted/50 relative overflow-hidden" ref={ref}>
+      <div className="absolute top-0 left-1/3 w-48 h-48 bg-primary/5 rounded-full blur-3xl animate-blob pointer-events-none" />
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 section-reveal">
           <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">Reviews</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">
@@ -39,11 +41,11 @@ export default function TestimonialsSection() {
           {reviews.map((review, i) => (
             <div
               key={review.name}
-              className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300"
+              className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-500 group"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                   {review.name.charAt(0)}
                 </div>
                 <div>
