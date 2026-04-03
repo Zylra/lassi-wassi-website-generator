@@ -14,12 +14,13 @@ export default function FranchiseSection() {
   return (
     <section
       id="franchise"
-      className="py-24 bg-gradient-to-br from-charcoal via-deep-brown to-charcoal text-primary-foreground relative overflow-hidden"
+      className="py-24 bg-charcoal text-primary-foreground relative overflow-hidden"
       ref={ref}
     >
-      {/* Decorative blobs */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-primary/15 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/15 rounded-full blur-3xl" />
+      {/* Liquid blobs */}
+      <div className="absolute top-0 right-0 w-72 h-72 bg-primary/15 rounded-full blur-3xl animate-blob" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-blob-delay-2" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-blob-delay-4" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center section-reveal">
@@ -34,14 +35,14 @@ export default function FranchiseSection() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             {perks.map((perk) => (
-              <div key={perk.text} className="flex items-center gap-3 bg-primary-foreground/5 rounded-xl px-5 py-3 border border-primary-foreground/10">
+              <div key={perk.text} className="flex items-center gap-3 bg-primary-foreground/5 rounded-xl px-5 py-3 border border-primary-foreground/10 hover:bg-primary-foreground/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
                 <perk.icon className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-sm font-medium text-primary-foreground/80">{perk.text}</span>
               </div>
             ))}
           </div>
 
-          <Button size="lg" className="text-lg px-10 py-6 animate-pulse-glow" asChild>
+          <Button size="lg" className="text-lg px-10 py-6 animate-pulse-glow hover:scale-105 transition-transform" asChild>
             <a
               href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
               target="_blank"
